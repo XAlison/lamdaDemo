@@ -11,7 +11,7 @@ import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.partitioningBy;
 import static java.util.stream.Collectors.toCollection;
 
-public class Main {
+public class LamdaMain {
 
     public static void main(String[] args) {
 

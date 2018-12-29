@@ -9,7 +9,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
  * @Date: 2018/12/29 10:28
  * @Version 1.0
  */
-public class Main1 {
+public class MenuMain {
 
 
     public static void main(String[] args) {
