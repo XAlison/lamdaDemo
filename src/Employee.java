@@ -6,9 +6,9 @@
  * @Version 1.0
  */
 public class Employee {
-    private  String name;
-    private  String City;
-    private  int Sales;
+    private String name;
+    private String City;
+    private int Sales;
 
     public Employee(String name, String city, int sales) {
         this.name = name;

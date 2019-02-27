@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.concurrent.atomic.AtomicBoolean;
 
 /**
  * @ClassName: Main1
@@ -23,9 +22,9 @@ public class MenuMain {
             add(new Menu("4", "组织机构", "0"));
             add(new Menu("5", "部门管理", "4"));
             add(new Menu("6", "员工列表", "2"));
-//            for (int i = 7; i < 50000; i++) {
-//                add(new Menu(String.valueOf(i), "员工列表" + i, String.valueOf(i)));
-//            }
+            for (int i = 7; i < 50000; i++) {
+                add(new Menu(String.valueOf(i), "员工列表" + i, String.valueOf(i)));
+            }
         }};
         List<Menu> targetMenus = new ArrayList<>();
         menus.parallelStream().forEachOrdered(menuOne -> {
@@ -45,10 +44,8 @@ public class MenuMain {
                     if (!flag) {
                         targetMenus.add(menuOne);
                     }
-
                 }
         );
-
         long endTime = System.currentTimeMillis();
         float seconds = (endTime - startTime) / 1000F;
         System.out.println("执行时间:" + Float.toString(seconds) + " seconds.");
